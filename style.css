@@ -1,0 +1,70 @@
+
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family:  "Times New Roman", Times, serif;
+}
+
+/* Сайт по центру */
+.main {
+  max-width: 2000px;
+  margin: auto;
+}
+
+h1 {
+    background: #D9FFAD; /* Цвет фона под заголовком */
+    background-color: black; /* Цвет текста */
+    padding: 70px; /* Поля вокруг текста */
+  font-size: 70px;
+  word-break: break-all;
+    
+
+
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Добавить отступы между каждым столбцом (если вы хотите) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Создайте четыре одинаковых столбца, которые плавают рядом друг с другом */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Очистить поплавки после строк */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Содержание */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Адаптивный макет - делает два столбца-макет вместо четырех столбцов */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Адаптивный макет - делает два столбца стека друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
